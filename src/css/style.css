@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font: normal 18px verdana;
+}
+
+h1 {
+    font: normal 30px verdana white;
+    text-align: center;
+}
+
+header {
+    margin: 25px 0 20px 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 40px 20px 40px;
+}
+
+#logo,
+#logo2 {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+
+#logo:hover,
+#logo2:hover {
+    transform: scale(1.1);
+    animation: girar 0.7s linear;
+
+}
+
+.pokemon {
+    width: 100px;
+}
+
+.pokemon:hover {
+    transition: 0.8s;
+    transform: scale(1.0997);
+}
+
+@keyframes girar {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.alterar-tema {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.light {
+    background-color: #acacac;
+    color: #333;
+    transition: 0.7s;
+}
+
+.dark {
+    background-color: #09090e;
+    color: #333;
+    transition: 0.7s;
+}
+
+.lista {
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cartao {
+
+    border-radius: 15px;
+    text-align: center;
+    background-image: url(fundo-cartao.avif);
+    background-position: center center;
+    background-size: cover;
+    width: 190px;
+    height: 265px;
+    gap: 30px;
+}
+
+.cartao:hover {
+    background: url(fundo-cartao.png);
+    background-position: center center;
+    background-size: cover;
+}
+
+.informacaoes {
+    text-transform: uppercase;
+    padding: 30px;
+    border-radius: 30px;
+    margin: 0 auto;
+    width: 160px;
+    border: 2px solid black;
+    box-shadow: 5px 10px 20px black;
+    color: white;
+    margin: 10px;
+    display: flex;
+    padding: 5px;
+}
+
+
+
+.tipos {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.gif {
+    width: 100px;
+    height: 100px;
+}
+
+.descricao {
+    width: 190px;
+    height: 70px;
+    overflow-y: scroll;
+}
+
+.gif-kimetsu {
+    width: 150px;
+}
+
+.tipo-grama {
+    background: green;
+
+
+}
+
+.tipo-veneno {
+    background: purple;
+    padding: 20px;
+}
+
+.tipo-fogo {
+    background: orangered;
+    padding: 5px;
+    border-radius: 10px;
+
+}
+
+.tipo-voo {
+    background: rgba(241, 238, 238, 0.42);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.tipo-agua {
+    background: rgb(11, 72, 204);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.tipo-lutador {
+    background: rgb(96, 50, 17);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.tipo-stell {
+    background: #535353;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.tipo-psychic {
+    background: rgb(220, 85, 107);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.tipo-ghost {
+
+    background: purple;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.tipo-dragon {
+    background: linear-gradient(to top, blue, red);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.tipo-ground {
+    background: linear-gradient(to top, brown, yellow);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.tipo-eletric {
+    background: rgba(218, 218, 23, 0.927);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.tipo-dark {
+    background: rgb(28, 28, 28);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.tipo-normal {
+    background: rgb(85, 84, 84);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.tipo-flying {
+    background: linear-gradient(to bottom, rgb(65, 65, 174), gray);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.descricao::-webkit-scrollbar {
+    width: 15px;
+
+
+
+
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, rgb(202, 76, 97), blue);
+    border-radius: 10px;
+}
+
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, red, blue);
+}
+
+.cartao:hover{
+
+    cursor: pointer;
+    box-shadow: 0 0 20px #11ec3d;
+    animation: neon 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neon {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.05);
+        opacity: 0.78;
+    }
+}
+

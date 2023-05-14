@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pokémos</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/kimetsu.css">
+</head>
+
+<body class="light">
+    <header>
+        <picture>
+            <img src="src/imagens/pokeball.png" alt="" id="logo">
+        </picture>
+        <picture>
+           <a href="https://github.com/mateuspborges" target="_blank"> <img src="src/imagens/pokemon-logo.png" alt="" class="pokemon" ></a>
+        </picture>
+        <picture>
+            <button class="alterar-tema js-theme"><img src="src/imagens/sun.png" alt="" id="logo2"
+                    onclick="toggleMode()"></button>
+
+        </picture>
+    </header>
+    <main>
+        <ul class="lista">
+            <li class="cartao" class="dark" >
+                <div class="informacaoes">
+                    <span>Alakazam</span>
+                    <span>#065</span><br>
+                </div>
+                <img src="src/imagens/alakazam.gif" alt="bulbasaur" class="gif">
+                <ul class="tipos">
+                    <li class="tipo-psychic">psychic</li>
+                    <li>
+                </ul>
+                <div class="descricao">
+                    <p>Tem um nível incrivelmente alto de inteligência. Alguns dizem que Alakazam se lembra de tudo o
+                        que acontece com ele, desde o nascimento até a morte.
+
+                    </p>
+                </div>
+            </li>
+
+            <li class="cartao">
+                <div class="informacaoes">
+                    <span>Farfetch'd</span>
+                    <span>#083</span><br>
+                </div>
+                <img src="src/imagens/farfetch.gif" alt="bulbasaur" class="gif">
+                <ul class="tipos">
+                    <li class="tipo-normal">Normal</li>
+                    <li class="tipo-flying">Flying</li>
+                </ul>
+                <div class="descricao">
+                    <p>O talo que este Pokémon carrega em suas asas serve como uma espada para cortar os oponentes. Em
+                        uma situação terrível, o talo também pode servir de alimento.</p>
+                </div>
+            </li>
+
+            <li class="cartao">
+                <div class="informacaoes">
+                    <span>Pichu</span>
+                    <span>#172</span><br>
+                </div>
+                <img src="src/imagens/pichu.gif" alt="bulbasaur" class="gif">
+                <ul class="tipos">
+
+                    <li class="tipo-eletric">Eletric</li>
+                </ul>
+                <div class="descricao">
+                    <p>É inábil em armazenar energia elétrica. Qualquer tipo de choque faz com que ele descarregue
+                        energia espontaneamente. </p>
+                </div>
+            </li>
+
+            <li class="cartao" id="Charmander">
+                <div class="informacaoes">
+                    <span>Charmander</span>
+                    <span>#004</span><br>
+                </div>
+                <img src="src/imagens/charmander.gif" alt="bulbasaur" class="gif">
+                <ul class="tipos">
+                    <li class="tipo-fogo">fogo</li>
+
+                </ul>
+                <div class="descricao">
+                    <p>Tem preferência por coisas quentes. Quando chove, diz-se que o vapor jorra da ponta de sua cauda.
+                    </p>
+                </div>
+            </li>
+
+            <li class="cartao" id="umbreon">
+                <div class="informacaoes">
+                    <span>Umbreon</span>
+                    <span>#197</span><br>
+                </div>
+                <img src="src/imagens/umbreon.gif" alt="bulbasaur" class="gif">
+                <ul class="tipos">
+                    <li class="tipo-dark
+                        ">Dark</li>
+
+                </ul>
+                <div class="descricao">
+                    <p>Quando exposto à aura da lua, os anéis em seu corpo brilham levemente e ele ganha um poder
+                        misterioso. </p>
+                </div>
+            </li>
+
+            <li class="cartao" id="Charmander">
+                <div class="informacaoes">
+                    <span>Charizard</span>
+                    <span>#006</span><br>
+                </div>
+                <img src="src/imagens/charizard.gif" alt="bulbasaur" class="gif">
+                <ul class="tipos">
+                    <li class="tipo-fogo">fogo</li>
+                    <li class="tipo-voo">voo</li>
+                </ul>
+                <div class="descricao">
+                    <p>Ele cospe fogo que é quente o suficiente para derreter pedras. Pode causar incêndios florestais
+                        soprando chamas.</p>
+                </div>
+            </li>
+
+            <li class="cartao">
+                <div class="informacaoes">
+                    <span>Squirtle</span>
+                    <span>#007</span><br>
+                </div>
+                <img src="src/imagens/squirtle.gif" alt="bulbasaur" class="gif">
+                <ul class="tipos">
+                    <li class="tipo-agua">Agua</li>
+
+                </ul>
+                <div>
+                    <div class="descricao">
+                        <p>Quando retrai seu longo pescoço em sua concha, esguicha água com força vigorosa. </p>
+                    </div>
+            </li>
+
+            <li class="cartao" id="">
+                <div class="informacaoes">
+                    <span>Garchomp</span>
+                    <span>#445</span><br>
+                </div>
+                <img src="src/imagens/445.gif" alt="Garchomp" class="gif"></a>
+                <ul class="tipos">
+                    <li class="tipo-dragon">Dragon</li>
+                    <li class="tipo-ground">Ground</li>
+
+                </ul>
+                <div class="descricao">
+                    <p>Há uma semente de planta em suas costas desde o dia em que este Pokémon nasceu. A semente cresce
+                        lentamente. </p>
+                </div>
+            </li>
+
+            <li class="cartao">
+                <div class="informacaoes">
+                    <span>Blastoise</span>
+                    <span>#009</span><br>
+                </div>
+                <img src="src/imagens/blastoise.gif" alt="bulbasaur" class="gif">
+                <ul class="tipos">
+                    <li class="tipo-agua">Agua</li>
+
+                </ul>
+                <div>
+                    <div class="descricao">
+                        <p>Há uma semente de planta em suas costas desde o dia em que este Pokémon nasceu. A semente
+                            cresce lentamente. </p>
+                    </div>
+            </li>
+
+            <li class="cartao">
+                <div class="informacaoes">
+                    <span>Pikachu</span>
+                    <span>#025</span><br>
+                </div>
+                <img src="src/imagens/pikach.gif" alt="bulbasaur" class="gif">
+                <ul class="tipos">
+                    <li class="tipo-eletric">Eletric</li>
+
+                </ul>
+                <div class="descricao">
+                    <p>Há uma semente de planta em suas costas desde o dia em que este Pokémon nasceu. A semente cresce
+                        lentamente. </p>
+                </div>
+            </li>
+
+            <li class="cartao">
+                <div class="informacaoes">
+                    <span>Gengar</span>
+                    <span>#093</span><br>
+                </div>
+                <img src="src/imagens/gengar.gif" alt="bulbasaur" class="gif">
+                <ul class="tipos">
+                    <li class="tipo-psychic">psychic</li>
+                    <li class="tipo-ghost">Gost</li>
+
+                </ul>
+                <div class="descricao">
+                    <p>Há uma semente de planta em suas costas desde o dia em que este Pokémon nasceu. A semente cresce
+                        lentamente. </p>
+                </div>
+            </li>
+            <li class="cartao">
+                <div class="informacaoes">
+                    <span>lucario</span>
+                    <span>#448</span><br>
+                </div>
+                <img src="src/imagens/lucario.gif" alt="bulbasaur" class="gif">
+                <ul class="tipos">
+                    <li class="tipo-lutador">lutador</li>
+                    <li class="tipo-stell">
+                        ferro
+                    </li>
+
+                </ul>
+                <div class="descricao">
+                    <p>Há uma semente de planta em suas costas desde o dia em que este Pokémon nasceu. A semente cresce
+                        lentamente. </p>
+                </div>
+            </li>
+            
+            
+        </ul>
+    </main>
+
+    <script src="src/js/pokemon.js"></script>
+</body>
+
+</html>

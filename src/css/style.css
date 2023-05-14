@@ -266,4 +266,12 @@ header {
         opacity: 0.78;
     }
 }
+.gif-tanjiro{
+    width: 150px;
+}
+.respiracao-sol{
+    padding: 7px;
+    border-radius: 15px;
+    background: linear-gradient(to bottom, red, red, yellow);
+}
 
